@@ -1,4 +1,4 @@
-package com.temaulahoje.api;
+package com.temaulahoje;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

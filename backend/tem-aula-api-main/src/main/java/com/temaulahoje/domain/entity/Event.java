@@ -1,4 +1,4 @@
-package com.temaulahoje.api.domain.entity;
+package com.temaulahoje.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
