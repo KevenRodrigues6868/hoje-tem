@@ -21,10 +21,7 @@ public class OrganizerService implements IOrganizerService{
     @Transactional
     public OrganizerResponse create(OrganizerRequest request){
 
-        System.out.println("Criando o organizador :" + request);
         Organizer organizer = mapper.toEntity(request);
-        System.out.println("Convertendo o organizador :" + organizer);
-
         Organizer organizerSaved = repository.save(organizer);
         return mapper.toResponse(organizerSaved);
     }
