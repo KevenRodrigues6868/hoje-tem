@@ -64,6 +64,20 @@
 			<version>${org.mapstruct.version}</version>
 		</dependency>
 
+		<!-- Para integrar com Spring -->
+		<dependency>
+			<groupId>org.mapstruct</groupId>
+			<artifactId>mapstruct-processor</artifactId>
+			<version>1.5.5.Final</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>9.4.3</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

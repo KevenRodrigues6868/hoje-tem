@@ -41,4 +41,15 @@ public class Organizer {
     @UpdateTimestamp
     @Comment("Data e hora da última atualização do registro")
     private LocalDateTime updatedAt;
+
+    @PrePersist
+    protected void prePersist(){
+        this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.now();
+    }
+
+    @PreUpdate
+    protected void preUpdated(){
+        this.updatedAt = LocalDateTime.now();
+    }
 }
